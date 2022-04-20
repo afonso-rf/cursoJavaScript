@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prendendo sobre Eventos o DOM</title>
+    <style>
+        div#area {
+            background-color: #1e9b1e;
+            color: white;
+            font: normal 20pt Arial;
+            width: 200px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="area" >
+        Interagindo...
+    </div>
+
+    <script>
+        var area = window.document.getElementById('area')
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+
+        function clicar() {
+            area.innerText = "Clicou!"
+            area.style.background = 'red'
+                }
+        function entrar() {
+            area.innerText = 'Entrou!'
+        }
+        function sair() {
+            area.innerText = 'Saiu!'
+            area.style.background = '#1e9b1e'
+        }
+    </script>
+</body>
+</html>
