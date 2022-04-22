@@ -13,13 +13,20 @@ header {
 section {
     background-color: white;
     border-radius: 10px;
-    text-align: center;
     width: 500px;
     padding: 15px;
     margin: auto;
     box-shadow: 3px 3px 10px grey;
 }
+div {
+    text-align: center;
+    padding: 10px;
 
+}
+img#imagem {
+    height: 250px;
+    width: 250px;
+}
 footer {
     color: white;
     text-align: center;
