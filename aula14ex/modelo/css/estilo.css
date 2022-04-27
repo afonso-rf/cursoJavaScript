@@ -1,5 +1,5 @@
 body {
-    background-color: aqua;
+    background-color: #476ff1;
     font: normal 15pt Arial;
 
 }
@@ -18,7 +18,7 @@ section {
     box-shadow: 3px 3px 10px grey;
 }
 div {
-    text-align: center;
+    text-align: justify;
     padding: 10px;
 
 }

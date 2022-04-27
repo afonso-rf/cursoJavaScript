@@ -6,7 +6,7 @@ function contar () {
     if (inicio == '' || fim == '' || passo == '') {
         alert('Erro! Insira os valores solicitados.')
     } else {
-        if (passo == 0) {
+        if (passo <= 0) {
             alert('Passo invalido! Considerando Passo = 1.')
             passo = 1
         }

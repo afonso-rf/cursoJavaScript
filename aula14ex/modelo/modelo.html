@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hora do Dia</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
-<body onload="carregar()">
+<body>
     <header>
-        <h1>Hora do Dia</h1>
+        <h1>Tabuada</h1>
     </header>
     <section >
-        <div id="horaDia">
-            Hora do dia
+        <div >
+            Numero: <input type="number" id="num" > 
+            <input type="button" value="Gerar Tabuada" onclick="tabuada()">
         </div>
-        <div id="foto">
-            <img src="imagens/fotomanha.png" alt="Imagem" id="imagem" >
+        <div style="text-align: center;">
+            <select style="
+            width: auto;
+            min-width: 130px;"
+              size="10" id="tabuada">
+               <option>Isira um numero acima</option>
+               
+            </select>
         </div>
     </section>
     <footer>
